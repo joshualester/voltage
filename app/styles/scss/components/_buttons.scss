@@ -1,0 +1,42 @@
+// ///////////////////////////////////
+// BUTTON STYLES
+// ///////////////////////////////////
+.btn {
+  white-space: nowrap;
+  padding: $spacing-1 $spacing-5;
+  font-size: $btn;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: $font-600;
+  padding: $spacing-2 $spacing-6;
+
+  a:hover,
+  a:active,
+  a:focus {
+    background-color: $red-1;
+    color: $white;
+  }
+
+  @include breakpoint($xl) {
+    a {
+      font-size: $btn;
+    }
+  }
+
+  &-outline-white {
+    @extend .btn;
+    border: 1px solid $white;
+    color: $white;
+  }
+
+  &-solid-red {
+    @extend .btn;
+    background-color: $red-3;
+    color: $white;
+  }
+
+  @include breakpoint($xl) {
+    font-size: 1.8rem;
+    padding: $spacing-3 $spacing-7;
+  }
+}

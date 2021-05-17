@@ -1,0 +1,96 @@
+// ///////////////////////////////////
+// UTILITIES
+// ///////////////////////////////////
+
+// --- Text Modifiers ------------------------------
+
+// Text Colors
+.text-black {
+  color: $black;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-gray-1 {
+  color: $gray-1;
+}
+
+.text-red-1 {
+  color: $red-1;
+}
+
+.text-red-2 {
+  color: $red-2;
+}
+
+.text-red-3 {
+  color: $red-3;
+}
+
+// Font Weights
+.text-thin {
+  font-weight: $font-300;
+}
+
+.text-600 {
+  font-weight: $font-600;
+}
+
+.text-bold {
+  font-weight: $font-bold;
+}
+
+// Text Alignment
+.text-center {
+  text-align: center;
+}
+
+.text-md-left {
+  @include breakpoint($md) {
+    text-align: left;
+  }
+}
+
+// Margins
+.mb-0 {
+  margin-bottom: 0;
+}
+
+// --- Backgrounds ------------------------------
+.bg-gray-1 {
+  background-color: $gray-1;
+}
+
+.bg-gray-2 {
+  background-color: $gray-1;
+}
+
+// Overlays
+.overlay-dark {
+  position: relative;
+  &::before {
+    content: '';
+    @include position(absolute, 0 0 0 0);
+    z-index: 10;
+    background-color: $alpha-black;
+  }
+  > .container {
+    position: relative;
+    z-index: 50;
+  }
+}
+
+// Shadows
+
+.box-shadow {
+  box-shadow: $box-shadow-sm;
+}
+
+// --- Display ------------------------------
+.d-md-none {
+  @include breakpoint($md) {
+    display: none;
+  }
+}

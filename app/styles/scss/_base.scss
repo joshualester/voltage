@@ -1,0 +1,31 @@
+// ///////////////////////////////////
+// GLOBAL STYLES
+// ///////////////////////////////////
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+// --- Base Styles ------------------------------
+
+html {
+  position: relative;
+  min-width: 320px;
+  @include size(100%, auto);
+  font-size: 10px;
+  overflow-x: hidden;
+
+  @include breakpoint($xl) {
+    overflow-y: auto !important;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: $font-family;
+  font-weight: $font-300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}

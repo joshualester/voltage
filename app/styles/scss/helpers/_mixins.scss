@@ -1,0 +1,12 @@
+// ///////////////////////////////////
+// MIXINS
+// ///////////////////////////////////
+
+// --- Animations ------------------------------
+@mixin transition-all-bounce($time: 0.2s) {
+  transition: all $time $bounce-easy;
+}
+
+// @mixin transition-all($time:0.2s) {
+//   transition: all $time ease;
+// }

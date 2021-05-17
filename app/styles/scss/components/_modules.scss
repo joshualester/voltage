@@ -1,0 +1,53 @@
+// ///////////////////////////////////
+// MODULES
+// ///////////////////////////////////
+#hero {
+  background-image: url('../../media/img/hero_320.jpg');
+  padding: 4.2rem 0 4.8rem 0;
+  @include breakpoint($sm) {
+    background-image: url('../../media/img/hero_sm.jpg');
+  }
+  @include breakpoint($md) {
+    background-image: url('../../media/img/hero_lg.jpg');
+  }
+  @include breakpoint($lg) {
+    padding: 12rem 0;
+    background-image: url('../../media/img/hero_xl.jpg');
+    p {
+      font-size: 2rem;
+      margin-bottom: $spacing-7;
+    }
+  }
+  @include breakpoint($xl) {
+    padding: 16rem 0 13.6rem 0;
+    background-image: url('../../media/img/hero_xxl.jpg');
+  }
+}
+
+#member-advantages {
+  padding-bottom: 0;
+  p {
+    line-height: $line-height-6;
+  }
+  @include breakpoint($md) {
+    padding-bottom: $spacing-3;
+  }
+  @include breakpoint($xl) {
+    padding-bottom: $spacing-4;
+  }
+}
+
+#cta {
+  padding-top: $spacing-2;
+}
+
+// #login {
+// display: none;
+// opacity: 0;
+// @include position(fixed, 0 0 0 0);
+// background-color: $alpha-white;
+// &.open {
+// display: block;
+// opacity: 1;
+// }
+// }

@@ -1,0 +1,74 @@
+// ///////////////////////////////////
+// VARIABLES
+// ///////////////////////////////////
+
+// --- Breakpoints ------------------------------
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+$xxxl: 1920px;
+
+// --- Spacing ------------------------------
+$spacing-1: 0.8rem;
+$spacing-2: 1.2rem;
+$spacing-3: 1.6rem;
+$spacing-4: 2.4rem;
+$spacing-5: 3.2rem;
+$spacing-6: 4.2rem;
+$spacing-7: 6rem;
+$spacing-8: 7.6rem;
+
+// --- Colors ------------------------------
+$black: #000;
+$white: #fff;
+
+$gray-1: #f7f7f7;
+$gray-2: #ebebeb;
+$gray-3: #939393;
+$gray-4: #707070;
+$gray-5: #4e4e4e;
+$gray-6: #484748;
+
+$red-1: #ec3a33;
+$red-2: #ec322f;
+$red-3: #ec292a;
+
+// --- Alpha Colors ------------------------------
+$alpha-white: rgba(255, 255, 255, 0.8);
+$alpha-black: rgba(0, 0, 0, 0.67);
+
+// --- Typography ------------------------------
+
+// Font stack
+$font-family: 'canada-type-gibson', helvetica, arial, sans-serif;
+
+// Font sizes
+$h1: 3.1rem;
+$h2: 2.1rem;
+$h3: 1.6rem;
+$p: 1.3rem;
+$btn: 1.3rem;
+$input: 1.4rem;
+
+// Line height
+$line-height-1: 0.98;
+$line-height-2: 1.05;
+$line-height-3: 1.1;
+$line-height-4: 1.15;
+$line-height-5: 1.22;
+$line-height-6: 1.56;
+$line-height-7: 1.6;
+
+// Font weights
+$font-300: 100;
+$font-600: 600;
+$font-bold: 700;
+
+// Box Shadow
+$box-shadow-sm: 0px 2px 6px 0 rgba(0, 0, 0, 0.22);
+$box-shadow-lg: 10px 10px 29px 0 rgba(0, 0, 0, 0.19);
+
+// Animations
+$bounce-easy: cubic-bezier(0.28, 0.12, 0.5, 1);

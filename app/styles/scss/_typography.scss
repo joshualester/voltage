@@ -1,0 +1,75 @@
+// ///////////////////////////////////
+// TYPOGRAPHY
+// ///////////////////////////////////
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @include padding(0);
+  @include margin(0);
+}
+
+h1 {
+  font-size: $h1;
+  color: $white;
+  font-weight: $font-bold;
+  margin-bottom: $spacing-5;
+  text-transform: uppercase;
+  @include breakpoint($lg) {
+    font-size: 4.8rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $h2;
+  text-transform: uppercase;
+  font-weight: $font-600;
+  margin-bottom: $spacing-6;
+  @include breakpoint($xl) {
+    font-size: 3.4rem;
+    margin-bottom: 6.8rem;
+  }
+}
+
+h3 {
+  font-size: $h3;
+  font-weight: $font-600;
+  margin-bottom: $spacing-4;
+  text-transform: uppercase;
+  @include breakpoint($xl) {
+    font-size: 1.8rem;
+  }
+}
+
+p {
+  font-size: $p;
+  line-height: $line-height-7;
+  margin-bottom: $spacing-5;
+  color: $gray-6;
+
+  @include breakpoint($lg) {
+    font-size: 1.6rem;
+  }
+}
+
+// --- Links ------------------------------
+
+a {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}

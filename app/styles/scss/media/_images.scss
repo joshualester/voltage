@@ -1,0 +1,45 @@
+// ///////////////////////////////////
+// IMAGES
+// ///////////////////////////////////
+img {
+  margin: 0 auto;
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  width: 100%;
+  max-width: 100%;
+  /* Adhere to container width. */
+  vertical-align: top;
+  display: block;
+}
+
+svg {
+  @extend img;
+  height: 100%;
+}
+
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+figure {
+  @include padding(0);
+  @include margin(0);
+}
+
+.icon {
+  @include size(auto, 64px);
+  margin-bottom: $spacing-4;
+  @include breakpoint($xl) {
+    @include size(auto, 128px);
+    margin-bottom: 4rem;
+  }
+}
+
+// BACKGROUND IMAGES
+.bg-full {
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}

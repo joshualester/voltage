@@ -1,0 +1,35 @@
+{
+  "name": "voltage-test",
+  "version": "1.0.0",
+  "description": "Coding test for Voltage's Sr Frontend Developer Role",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshualester/voltage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "babelify": "^10.0.0",
+    "bourbon": "^7.0.0",
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.26.14",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
