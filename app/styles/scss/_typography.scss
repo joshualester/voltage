@@ -45,11 +45,21 @@ h3 {
   }
 }
 
+h4 {
+  font-size: $h2;
+  font-weight: $font-600;
+  margin-bottom: $spacing-4;
+  text-transform: uppercase;
+  @include breakpoint($xl) {
+    font-size: 1.8rem;
+  }
+}
+
 p {
   font-size: $p;
   line-height: $line-height-7;
   margin-bottom: $spacing-5;
-  color: $gray-6;
+  color: $black;
 
   @include breakpoint($lg) {
     font-size: 1.6rem;

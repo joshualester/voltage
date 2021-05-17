@@ -1,12 +1,19 @@
 const modal = {
   init: () => {
-    // const header = document.getElementById('header');
-    // const navToggler = document.getElementById('nav-toggle');
+    const loginElement = document.getElementById('login');
+    const closeBtn = document.getElementById('close');
 
-    // navToggler.addEventListener('click', function () {
-    //   header.classList.toggle('open');
-    // });
-    console.log('modal init');
+    const modalTriggers = document.querySelectorAll('[data-trigger-modal]');
+
+    modalTriggers.forEach((modalTrigger) => {
+      modalTrigger.addEventListener('click', function () {
+        loginElement.classList.toggle('open');
+      });
+    });
+
+    closeBtn.addEventListener('click', function () {
+      loginElement.classList.remove('open');
+    });
   },
 };
 modal.init();

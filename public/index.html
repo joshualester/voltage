@@ -29,7 +29,7 @@
 				<ul class="nav-list">
 					<li class="nav-item"><a href="#">Store</a></li>
 					<li class="nav-item"><a href="#">About Us</a></li>
-					<li class="nav-item"><a href="#">Login/Sign Up</a></li>
+					<li class="nav-item"><a data-trigger-modal href="#">Login/Sign Up</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -55,7 +55,7 @@
 	<section id="member-advantages">
 		<div class="container">
 			<h2 class="text-red-1 text-center">Member Advantages</h2>
-			<div class="row">
+				<div class="row">
 					<div class="col-xl-8 offset-xl-2">
 						<div class="row">
 							<div class="col-md-4">
@@ -94,19 +94,28 @@
 	</section>
 
 	<!-- Login Overlay -->
-	<!-- <div id="login">
-		<div class="modal-container">
-			<form action="">
-				<input type="text" placeholder="Email">
-				<input type="text" placeholder="Password">
-			</form>
-			<p><a href="#">Forgot your password?</a></p>
-			<div class="buttons">
-				<input type="submit" value="Register">
-				<input type="submit" value="Sign in">
-			</div>
+	<div id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+					<div class="modal-container">
+						<div id="close"><img src="./media/img/icon_close.svg" alt=""></div>
+						<div class="modal-body">
+							<h4 class="text-red-1 text-center">Member Login</h4>
+							<form action="">
+								<input type="text" placeholder="Email">
+								<input type="text" placeholder="Password">
+								<p class="text-gray-1 text-center text-uppercase"><a href="#" >Forgot your password?</a></p>
+								<div class="buttons">
+									<input type="submit" name="register" value="Register">
+									<input type="submit" name="sign_in" value="Sign In">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 		</div>
-	</div> -->
+	</div>
 
 
 	<script src="./js/bundle.min.js"></script>

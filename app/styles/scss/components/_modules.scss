@@ -41,13 +41,104 @@
   padding-top: $spacing-2;
 }
 
-// #login {
-// display: none;
-// opacity: 0;
-// @include position(fixed, 0 0 0 0);
-// background-color: $alpha-white;
-// &.open {
-// display: block;
-// opacity: 1;
-// }
-// }
+#login {
+  visibility: hidden;
+  opacity: 0;
+  @include position(absolute, 0 0 0 0);
+  background-color: $alpha-white;
+  transition: all 0.15s ease;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 150;
+  }
+  .modal-container {
+    position: relative;
+    background-color: $white;
+    top: 81px;
+    margin-left: -15px;
+    margin-right: -15px;
+    .modal-body {
+      padding: $spacing-5 $spacing-5 0 $spacing-5;
+    }
+    .buttons {
+      display: flex;
+      margin-left: -#{$spacing-5};
+      margin-right: -#{$spacing-5};
+    }
+  }
+  #close {
+    cursor: pointer;
+    @include position(absolute, 20px 20px null null);
+    @include size(15px, 15px);
+  }
+  p {
+    margin-bottom: $spacing-5;
+  }
+  form {
+  }
+  input {
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    color: $gray-1;
+    border-bottom: 1px solid $gray-1;
+    text-transform: uppercase;
+    padding: $spacing-1 0 4px 0;
+    margin-bottom: $spacing-6;
+    &::placeholder {
+      color: $gray-1;
+    }
+  }
+  input[type='submit'] {
+    padding: $spacing-4 $spacing-5;
+    color: $white;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  input[name='register'] {
+    background-color: $gray-1;
+  }
+  input[name='sign_in'] {
+    background-color: $red-2;
+  }
+
+  @include breakpoint($md) {
+    .modal-container {
+      top: 120px;
+      box-shadow: $box-shadow-lg;
+    }
+    .modal-container {
+      h4 {
+        font-size: 3.4rem;
+      }
+      .modal-body {
+        padding: $spacing-7 $spacing-7 0 $spacing-7;
+      }
+      .buttons {
+        display: flex;
+        margin-left: -#{$spacing-7};
+        margin-right: -#{$spacing-7};
+      }
+    }
+    #close {
+      @include position(absolute, 25px 25px null null);
+      @include size(21px, 21px);
+    }
+    input,
+    p {
+      font-size: 1.8rem;
+    }
+    input[type='submit'] {
+      font-size: 2rem;
+      padding-top: $spacing-5;
+      padding-bottom: $spacing-5;
+    }
+  }
+  @include breakpoint($xl) {
+    .modal-container {
+      top: 195px;
+    }
+  }
+}
